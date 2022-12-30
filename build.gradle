@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext{
+    compileSdkVersion = 32
+    minSdkVersion = 21
+    targetSdkVersion = 32
+    core_ktx_version="1.6.0"
+    material_version="1.4.0"
+    appcompat_version='1.5.1'
+    okhttp_version='4.9.3'
+    retrofit_version='2.9.0'
+    gson_version='2.8.6'
+    glide_version='4.12.0'
+//    liteavSdk="com.tencent.liteav:LiteAVSDK_Professional:9.5.11200"
+}
